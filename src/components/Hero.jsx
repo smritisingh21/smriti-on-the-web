@@ -5,21 +5,11 @@ import {
   Activity, 
   ArrowUpRight,
   Target,
-  Trophy,
   Linkedin,
   Twitter,
   Mail
 } from 'lucide-react';
 import { FaGraduationCap } from 'react-icons/fa';
-
-/**
- * THE DESIGN STRATEGY:
- * 1. RESPONSIVE FILTERING: On mobile (< 768px), we hide non-essential cards (Streak, Location, Status) 
- * to focus on the core narrative: Activity, Bio, and Socials.
- * 2. FLUID GRID: Standard 4-column layout on desktop, switching to a clean columnar flow on mobile.
- * 3. REAL DATA: Fetches live GitHub max streak data for smritisingh21.
- * 4. COMPATIBILITY: Uses lucide-react for all icons to ensure stable compilation.
- */
 
 const BentoStats = () => {
   const [time, setTime] = useState('');
@@ -139,13 +129,7 @@ const BentoStats = () => {
         {/* CARD 2: Max Streak (Hidden on Mobile) */}
         <div className="hidden md:flex md:col-span-1 md:row-span-1 bg-white/[0.02] backdrop-blur-sm border border-stone-700 rounded-[2.5rem] p-8 flex-col justify-between group
          hover:border-stone-100/20 transition-all duration-700">
-           <div className="text-[9px] font-black uppercase tracking-[0.4em] text-stone-600 flex items-center gap-2">
-             <Trophy size={12} className="text-amber-500" /> Max Streak
-           </div>
-           <div>
-              <div className="text-5xl font-black text-stone-100 leading-none tracking-tighter">{maxStreak}</div>
-              <p className="text-[10px] font-bold text-stone-500 uppercase tracking-widest mt-1 italic">days in a row</p>
-           </div>
+           <video src='public/cat.gif'/>
         </div>
 
         {/* CARD 3: About Me (Visible Mobile + Desktop) */}

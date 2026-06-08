@@ -7,10 +7,10 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Home', href: '#' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Selected Works', href: '#projects-section' },
-    { name: 'Contact', href: '#contacts' },
+    { name: 'Home', href: '/' },
+    { name: 'Experience', href: '/works' },
+    { name: 'Selected Works', href: '/projects' },
+    { name: 'Blogs', href: '/blogs' },
   ];
 
   const socials = [

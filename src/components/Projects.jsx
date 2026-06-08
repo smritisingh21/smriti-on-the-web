@@ -51,6 +51,7 @@ export default function Projects() {
         <div className="grid lg:grid-cols-2 gap-5 md:grid-cols-2 border-t border-stone-900">
           {PROJECTS_DATA.map((project, idx) => (
             <ProjectCard 
+              live={project.live}
               key={project.id} 
               project={project} 
               tech={project.tech}

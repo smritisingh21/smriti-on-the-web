@@ -13,11 +13,14 @@ const ProjectCard = ({ project, onOpen }) => {
     >
       {/* 1. SCREENSHOT CONTAINER */}
       <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-stone-900 border border-stone-800 group-hover:border-stone-400 transition-all duration-700 ease-out">
-        <img 
+        <a href={project.live} target='_blank' 
+              rel="noopener noreferrer" >
+          <img 
           src={project?.img || placeholderImage} 
           alt={project?.title || "Project Screenshot"}
           className="w-full h-full object-fill  group-hover:scale-105 transition-all duration-1000 ease-in-out opacity-40 group-hover:opacity-100"
         />
+        </a>
         
         <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
         

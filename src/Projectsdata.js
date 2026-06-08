@@ -12,7 +12,7 @@ export const PROJECTS_DATA = [
     color: "emerald"
   },
     {
-    id: 3,
+    id: 2,
     title: "SyncDrive",
     img:"SyncDrive.png",
     cat: "Stores your files and folders",
@@ -23,14 +23,24 @@ export const PROJECTS_DATA = [
     color: "cyan"
   },
   {
-    id: 2,
+    id: 3,
     title: "MemoDeck - for all your notes",
     img:"memodeck.png",
-    cat: "Web development",
+    cat: "Personal project",
     longDescription: "A CRUD note-taking app with a neo-brutal UI using MERN stack, including auth.You can select multiple themes, implemented using Daisy UI library.",
     tech: ["JavaScript", "React", "TailwindCSS", ,"MongoDB Atlas","Daisy UI", "ContextAPI","RESPONSIVE DESIGN","REACT ICONS"],
     live: "https://memo-deck.vercel.app/login",
     github: "https://github.com/smritisingh21/Memo-Deck",
+    color: "amber"
+  },
+  {
+    id: 4,
+    title: "EHCPP official website",
+    img:"ehcpp2.png",
+    cat: "Freelance project",
+    longDescription: "Designed and developed the official website for the Eastern Himalayan Center for Public Policy,a think tank based in Kalimpong, West Bengal. ",
+    tech: ["JavaScript", "React", "TailwindCSS","RESPONSIVE DESIGN", "Figma"],
+    live: "https://www.ehcpp.co.in/",
     color: "amber"
   },
 

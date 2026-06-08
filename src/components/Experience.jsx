@@ -16,14 +16,16 @@ const Experience = () => {
       role: 'Full stack developer', 
       company: 'Freelance', 
       year: '2025- present',
-      description: 'Architecting high-performance web applications using the MERN stack and providing tech support.Spent a lot of time focusing on web fundamentals and worked on my personal projects.Some gigs are currently under process and will be shared soon.Stay tuned! '
+      description: `Architecting high-performance web applications.Spent a lot of time focusing on web fundamentals and worked on my personal projects. \n
+      \n  Worked with organisations like the Eastern Himalayan Center for Public Policy , providing solutions for their website needs and technical support, including complete design and development of their landing page.`
+      
     },
     { 
       id: '02', 
       role: 'Creative head', 
       company: 'Altalune Atelier ', 
       year: 'Oct 2023 - Dec 2023',
-      description: 'Altalune Atelier is a creative agency that helped creators to developed brand identities through social media.I lead teams for designs and video-edits. My role also involved facing clients directly and collaborating to understand their needs and deliver results.'
+      description: 'Altalune Atelier is a social media agency that helped creators to developed brand identities online.I lead teams for designs and video-edits. My role also involved facing clients directly and collaborating to understand their needs and deliver results.'
     },
     { 
       id: '03', 
