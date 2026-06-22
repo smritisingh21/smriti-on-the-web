@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaArrowCircleRight, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
-import { FaCircleNotch, FaGithub , FaLinkedin, FaLocationDot, FaX } from 'react-icons/fa6';
+import { FaGithub , FaLinkedin, FaLocationDot, FaX } from 'react-icons/fa6';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,10 +74,11 @@ const Sidebar = () => {
           <div className=" border-t border-stone-900 pt-3 ">
           <div className="flex gap-5">
             {socials.map((social, idx) => (
-              <a 
-                key={idx} 
-                href={social.href} 
-                target='_blank'
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
                 className="text-stone-600 hover:text-stone-100 transition-colors"
               >
                 {social.icon}
@@ -91,15 +93,15 @@ const Sidebar = () => {
         <nav className="flex flex-col gap-6">
           <div className="text-[9px] font-bold text-stone-700 uppercase tracking-[0.5em] mb-2">Menu</div>
           {links.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={() => setIsOpen(false)}
               className="group flex items-center justify-between text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-stone-100 transition-all"
             >
               {link.name}
               <FaArrowCircleRight size={14} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
-            </a>
+            </Link>
           ))}
         </nav>
 
