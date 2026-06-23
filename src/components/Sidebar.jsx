@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaArrowCircleRight, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
-import { FaGithub , FaLinkedin, FaLocationDot, FaX } from 'react-icons/fa6';
+import { FaGithub , FaLinkedin, FaLocationDot, FaX , FaInstagram} from 'react-icons/fa6';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +18,7 @@ const Sidebar = () => {
     { icon: <FaLinkedin size={18} />, href: "https://www.linkedin.com/in/smriti-singh-a06685257/" },
     { icon: <FaGithub  size={18} />, href: "https://github.com/smritisingh21" },
     { icon: <FaTwitter  size={18} />, href: "https://x.com/sillymilllly" },
+    { icon: <FaInstagram  size={18} />, href: "https://www.instagram.com/smriti.made.these/" },
   ];
 
   return (
