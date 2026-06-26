@@ -35,9 +35,10 @@ export const blogs = [
     I felt I could get into tech without an expensive engineering degree if I hustled. 
     I learned video editing, design, and branding in a cohort of talented people. \n
 
-    I ended up at a Tier-3 engineering college in Bengaluru. 
-    I joined a senior-led agency as a video editor and freelanced as an illustrator for books. 
-    Parallelly, I was learning to code. 
+    I ended up at an engineering college in Bengaluru. 
+    I joined an agency led ny my college-senior as a video editor and was promoted to handling creative teams, for both graphic design and video edits. 
+    Parallelly, I was learning how to code. Things did not work out at the agency and I was lost again. 
+    I did freelance work for sometime, making thumbnails and edits for small YT channels.
     I started liking tech—understanding how things work internally. 
     Eventually, I focused on web development, pausing the other creative hustles to manage college attendance. \n
 

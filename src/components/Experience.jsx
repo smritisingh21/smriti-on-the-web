@@ -11,9 +11,10 @@ const Experience = () => {
   };
 
   const experiences = [
+  
     { 
       id: '01', 
-      role: 'Full stack developer', 
+      role: 'Full-stack develeper', 
       company: 'Freelance', 
       year: '2025- present',
       description: `Architecting high-performance web applications.Spent a lot of time focusing on web fundamentals and worked on my personal projects. \n
@@ -29,8 +30,8 @@ const Experience = () => {
     },
     { 
       id: '03', 
-      role: 'Freelance video editor', 
-      company: 'B.Tech / BLR', 
+      role: 'Video editor', 
+      company: 'Freelance', 
       year: 'June 2023 - October 2024',
       description:'Learned video-editing in AevyTV cohort and edited videos for YT channels while managing college , designed thumbnails for videos, enhanced my understanding of content-creation space.'
     }
@@ -55,7 +56,7 @@ const Experience = () => {
             >
               {/* Visible Header Row */}
               <div className="flex items-center justify-between py-6">
-                <div className="flex items-center gap-8 md:gap-16">
+                <div className="flex items-center gap-2 md:gap-12">
                   <span className="text-[10px] font-bold text-stone-800 group-hover:text-stone-400 transition-colors">
                     {exp.id}
                   </span>
@@ -64,12 +65,13 @@ const Experience = () => {
                   }`}>
                     {exp.role}
                   </h3>
+                  <p className="hidden md:block text-[10px] font-bold text-stone-300 uppercase tracking-widest italic">
+                    [{exp.company}]
+                  </p>
                 </div>
                 
                 <div className="flex items-center gap-6 md:gap-12">
-                  <p className="hidden md:block text-[10px] font-bold text-stone-600 uppercase tracking-widest italic">
-                    {exp.company}
-                  </p>
+                  
                   <p className="text-[11px] font-black text-stone-100 tabular-nums">
                     {exp.year}
                   </p>

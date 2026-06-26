@@ -75,12 +75,12 @@ const Socials = () => {
 
       {/* Header Section */}
       <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-6">
-          <Sparkles size={12} className="text-amber-400" />
-          <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400">Send me a mail</span>
-        </div>
+        {/* <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-6"> */}
+          {/* <Sparkles size={12} className="text-amber-400" /> */}
+          {/* <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400">Send me a mail</span> */}
+        {/* </div> */}
         <h2 className="text-4xl md:text-7xl font-black text-stone-100 tracking-tighter uppercase leading-none">
-          Let's Start a <br/><span className="text-gray-400 italic font-thin lowercase tracking-normal">Conversation</span>
+          Want to connect ?<br/><span className="text-gray-400 italic font-thin lowercase tracking-normal">Let's talk</span>
         </h2>
       </div>
 
@@ -121,8 +121,8 @@ const Socials = () => {
             className="group w-full py-6 bg-stone-100 text-black rounded-full font-black uppercase tracking-widest text-[10px] 
             flex items-center justify-center gap-4 hover:bg-transparent hover:text-white transition-all active:scale-[0.98] disabled:opacity-50"
           >
-            {isSubmitting ? 'Transmitting...' : (
-              <>Send Transmission <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" /></>
+            {isSubmitting ? 'Sending...' : (
+              <>Send mail <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" /></>
             )}
           </button>
 

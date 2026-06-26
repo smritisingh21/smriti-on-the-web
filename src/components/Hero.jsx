@@ -88,8 +88,8 @@ const BentoStats = () => {
           </div>
         </div>
         <div className="hidden md:flex flex-col items-end text-right">
-          <p className="text-[9px] font-black uppercase tracking-[0.4em] text-stone-700">Synchronized</p>
-          <p className="text-xs font-bold text-stone-400">Jan 2026</p>
+          <p className="text-[9px] font-black uppercase tracking-[0.4em] text-stone-700">Last updated :</p>
+          <p className="text-xs font-bold text-stone-400">June 2026</p>
         </div>
       </div>
 
@@ -104,7 +104,7 @@ const BentoStats = () => {
           <div className="flex justify-between items-center mb-2">
             <div className="flex items-center gap-2">
                <Github size={20} className="text-stone-500 group-hover:text-stone-100 transition-colors" />
-               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-stone-600">Github Contributions</span>
+               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-stone-600">My Github Contributions</span>
             </div>
             <a 
               href={`https://github.com/${githubUsername}`} 
@@ -121,7 +121,7 @@ const BentoStats = () => {
               src={`https://ghchart.rshah.org/40c463/${githubUsername}`} 
               alt={`${githubUsername}'s Github Chart`}
               className="w-full transition-all duration-700"
-              style={{ maxHeight: '100px', objectFit: 'contain' }}
+              style={{ maxHeight: '250px', objectFit: 'contain', }}
             />
           </div>
         </div>
@@ -129,7 +129,11 @@ const BentoStats = () => {
         {/* CARD 2: Max Streak (Hidden on Mobile) */}
         <div className="hidden md:flex md:col-span-1 md:row-span-1 bg-white/[0.02] backdrop-blur-sm border border-stone-700 rounded-[2.5rem] p-8 flex-col justify-between group
          hover:border-stone-100/20 transition-all duration-700">
-           <video src='public/cat.gif'/>
+             <img
+            src="https://media.giphy.com/media/11JTxkrmq4bGE0/giphy.gif"
+            alt="Working cat"
+            className="w-full h-full object-fill rounded-2xl"
+  />
         </div>
 
         {/* CARD 3: About Me (Visible Mobile + Desktop) */}

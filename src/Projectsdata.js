@@ -5,7 +5,7 @@ export const PROJECTS_DATA = [
     img:"fintrack.png",
     title: "FinTrack- your personal expense tracker",
     cat: "Web Development",
-    longDescription: "I focused on creating a seamless user experience where data transitions feel organic. The UI utilizes a custom-built charts and graphs that responds to cahnge in data added by the user suing Recharts library.",
+    longDescription: "I focused on creating a seamless user experience where data transitions feel organic. The UI utilizes a custom-built charts and graphs that responds to change in data added by the user using Recharts javascript library.",
     tech: ["React", "Tailwind", "REST API", "ContextAPI" ,"MongoDB Atlas", "Recharts.js" , "Express.js","MULTER"],
     live: "https://fin-track-ivory.vercel.app/",
     github: "https://github.com/smritisingh21/Fin-Track",

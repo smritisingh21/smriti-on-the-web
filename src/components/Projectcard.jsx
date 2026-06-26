@@ -68,14 +68,25 @@ const ProjectCard = ({ project, onOpen }) => {
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center text-stone-300 hover:bg-stone-100 hover:text-stone-700 transition-all duration-500">
+             <div className='flex  border border-stone-300  hover:bg-stone-100 rounded-full px-2 pl-4
+               hover:text-stone-700 transition-all duration-500   text-stone-300 items-center justify-center '>
+               <p>Github</p>
+               <div className="w-10 h-10 rounded-full 
+              flex items-center justify-center">
                 <FaGithub size={18} />
               </div>
+             </div>
 
 
             </a>
 
              {project.live?(
+             <div className='rounded-full border border-stone-300 flex items-center 
+              justify-center text-stone-300 hover:bg-stone-100  pl-4 px-2
+               hover:text-stone-700 transition-all duration-500'>
+
+              <p>See Live</p>
+
               <a 
               href={project?.live } 
               target='_blank' 
@@ -83,13 +94,18 @@ const ProjectCard = ({ project, onOpen }) => {
               onClick={(e) => e.stopPropagation()}
             >
                
-              <div className="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center text-stone-300 hover:bg-stone-100 hover:text-stone-700 transition-all duration-500">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center">
                 
                 <ArrowUpRight size={18} strokeWidth={2.5} /> 
-              </div></a>)
+              </div>
+              </a>
+             </div>
+              )
               :
-              (<p className='text-gray-500 tracking-tighter'>in progress...</p>)
-              }
+              (
+              <p className='text-gray-500 tracking-tighter'>in progress...</p>)
+             
+             }
             
 
            
