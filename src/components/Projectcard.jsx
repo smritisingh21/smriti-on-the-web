@@ -13,14 +13,11 @@ const ProjectCard = ({ project, onOpen }) => {
     >
       {/* 1. SCREENSHOT CONTAINER */}
       <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-stone-900 border border-stone-800 group-hover:border-stone-400 transition-all duration-700 ease-out">
-        <a href={project.live} target='_blank' 
-              rel="noopener noreferrer" >
           <img 
           src={project?.img || placeholderImage} 
           alt={project?.title || "Project Screenshot"}
           className="w-full h-full object-fill  group-hover:scale-105 transition-all duration-1000 ease-in-out opacity-40 group-hover:opacity-100"
         />
-        </a>
         
         <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
         
@@ -52,7 +49,7 @@ const ProjectCard = ({ project, onOpen }) => {
             {project?.tech.map((t) => (
               <span 
                 key={t} 
-                className="text-[8px] font-black uppercase tracking-[0.2em] text-stone-600 border border-stone-900 px-2 py-0.5 rounded transition-colors group-hover:border-stone-700 group-hover:text-stone-400"
+                className="text-[12px] font-normal text-stone-600 border border-stone-900 px-2 py-0.5 rounded transition-colors group-hover:border-stone-700 group-hover:text-stone-400"
               >
                 {t}
               </span>
@@ -68,8 +65,9 @@ const ProjectCard = ({ project, onOpen }) => {
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-             <div className='flex  border border-stone-300  hover:bg-stone-100 rounded-full px-2 pl-4
-               hover:text-stone-700 transition-all duration-500   text-stone-300 items-center justify-center '>
+             <div className='flex  border border-stone-300  hover:bg-stone-100 rounded-full 
+                px-2 pl-4 hover:text-stone-700 transition-all duration-500  
+                 text-stone-300 items-center justify-center cursor-pointer '>
                <p>Github</p>
                <div className="w-10 h-10 rounded-full 
               flex items-center justify-center">
@@ -80,32 +78,31 @@ const ProjectCard = ({ project, onOpen }) => {
 
             </a>
 
-             {project.live?(
-             <div className='rounded-full border border-stone-300 flex items-center 
-              justify-center text-stone-300 hover:bg-stone-100  pl-4 px-2
-               hover:text-stone-700 transition-all duration-500'>
-
-              <p>See Live</p>
-
-              <a 
+             <a 
               href={project?.live } 
               target='_blank' 
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-               
+
+             {project.live?(
+             <div className='rounded-full border border-stone-300 flex items-center 
+              justify-center text-stone-300 hover:bg-stone-100  pl-4 px-2
+               hover:text-stone-700 transition-all duration-500 cursor-pointer'>
+                 <p>See Live</p>
+             
               <div className="w-10 h-10 rounded-full flex items-center justify-center">
                 
                 <ArrowUpRight size={18} strokeWidth={2.5} /> 
               </div>
-              </a>
              </div>
               )
               :
               (
-              <p className='text-gray-500 tracking-tighter'>in progress...</p>)
-             
-             }
+                <p className='text-gray-500 tracking-tighter'>in progress...</p>)
+                
+              }
+              </a>
             
 
            

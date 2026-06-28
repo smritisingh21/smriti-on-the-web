@@ -41,6 +41,18 @@ export const PROJECTS_DATA = [
     longDescription: "Designed and developed the official website for the Eastern Himalayan Center for Public Policy,a think tank based in Kalimpong, West Bengal. ",
     tech: ["JavaScript", "React", "TailwindCSS","RESPONSIVE DESIGN", "Figma"],
     live: "https://www.ehcpp.co.in/",
+    github:"https://github.com/smritisingh21/EHCPP-landing-page",
+    color: "amber"
+  },
+  {
+    id: 4,
+    title: "PdfPrep - Learning accelerated with AI",
+    img:"pdf-prep.png",
+    cat: "Freelance project",
+    longDescription: "AI-powered application that transforms uploaded PDFs into interactive quizzes and flashcards using Retrieval-Augmented Generation (RAG).",
+    tech: ["Multer", "Nodejs", "TailwindCSS", "RAG", "Langchain", "Ollama", "ChromaDB", ],
+    // live: "https://www.ehcpp.co.in/",
+    github:"https://github.com/smritisingh21/pdf-prep",
     color: "amber"
   },
 

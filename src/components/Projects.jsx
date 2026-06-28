@@ -12,11 +12,11 @@ export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
   const [view, setView] = useState('grid'); 
 
-  const handleOpenProject = (project) => {
-    setActiveProject(project);
-    setView('details');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const handleOpenProject = (project) => {
+  //   setActiveProject(project);
+  //   setView('details');
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   const handleBack = () => {
     setView('grid');
@@ -55,7 +55,7 @@ export default function Projects() {
               key={project.id} 
               project={project} 
               tech={project.tech}
-              onOpen={() => handleOpenProject(project)} 
+              // onOpen={() => handleOpenProject(project)} 
             />
           ))}
         </div>
