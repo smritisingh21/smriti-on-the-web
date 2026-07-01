@@ -147,12 +147,13 @@ const BentoStats = () => {
           </div>
           
           <div className="flex items-center justify-center py-6 md:py-12">
-             <div className="relative w-full tracking-tight text-white/50 text-xs md:text-sm leading-relaxed text-center md:text-left">
-                I am an engineering student (currently in 6th sem) interested in <b>BACKEND DEVELOPMENT or SOFTWARE ENGINEERING</b> related roles.<br/><br/>
-                I am also looking forward to expand my horizons and explore other stuff like mobile-app dev, DevOps and System design.<br/><br/>
-                I've also worked previously as a video-editor, graphic designer, so yeah you can say that I have a knack for taking challenges and learning new things.
-                Looking for <b>INTERNSHIPS / ENTRY-LEVEL</b> positions at the moment.
-             </div>
+
+             <div className="relative w-full tracking-tight text-white/60 text-sm md:text-base leading-relaxed text-center md:text-left">
+             Curious engineer. Backend enthusiast. I enjoy turning ideas into real products using modern web technologies, 
+            AI, and cloud infrastructure while constantly pushing myself to learn something new.
+            Passionate about backend engineering, distributed systems, and solving real-world problems through scalable software.
+            Currently seeking <b>Software Engineering</b> and <b>Backend Development</b> internship or entry-level opportunities.
+         </div>
           </div>
         </div>
 

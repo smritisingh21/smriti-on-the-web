@@ -20,23 +20,60 @@ const Skills = () => {
   }, []);
 
   const skillCategories = [
-    {
-      category: "Frontend",
-      skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Shadcn UI","Material UI", "GSAP", "HTML5/CSS3"]
-    },
-    {
-      category: "Backend",
-      skills: ["Node.js", "Express", "MongoDB", "REST APIs", "Mongoose ORM", "Redis", "Prisma"]
-    },
-    // {
-    //   category: "DevOps",
-    //   skills: ["Render","Git", "Vercel", "CI/CD", "AWS Basics"]
-    // },
-    {
-      category: "Tools",
-      skills: ["Figma", "Postman", "GitHub", "Adobe Suite"]
-    }
-  ];
+  {
+    category: "Frontend",
+    skills: [
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Responsive Design",
+
+    ]
+  },
+  {
+    category: "Backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Authentication (JWT, OAuth)",
+      "Zod",
+      "Redis",
+      "Role-Based Access Control (RBAC)",
+      "MongoDB",
+      "Mongoose",
+      "Prisma ORM",
+      "AWS",
+      "Vercel",
+      "Render",
+      "Docker"
+    ]
+  },
+  {
+    category: "AI & Machine Learning",
+    skills: [
+      "LangChain",
+      "Retrieval-Augmented Generation (RAG)",
+      "Ollama",
+      "LLM Integration",
+    ]
+  },
+
+  {
+    category: "Tools",
+    skills: [
+      "Postman",
+      "GitHub",
+      "Figma",
+      
+    ]
+  },
+
+];
+
 
   return (
     <section 
@@ -49,10 +86,10 @@ const Skills = () => {
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/10 mb-4">
-            <span className="text-[8px] font-black uppercase tracking-[0.4em] text-stone-500 italic">Core Stack</span>
+            <span className="text-[8px] font-medium tracking-[0.4em] text-stone-500 italic">Tech stack</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-black text-stone-100 tracking-tighter uppercase mb-4 leading-none">
-            Technical <span className="text-stone-500 italic font-serif lowercase tracking-normal">Kit </span>
+          <h2 className="text-3xl md:text-5xl font-sans text-stone-100 tracking-tighter uppercase mb-4 leading-none">
+            Technical <span className="text-stone-500 italic font-sans lowercase tracking-normal">Kit </span>
           </h2>
           <p className="text-[13px] flex justify-center font-bold text-stone-400 ">
             A serialized overview of tools and frameworks i've used until now.
@@ -68,9 +105,11 @@ const Skills = () => {
               style={{ transitionDelay: `${groupIndex * 150}ms` }}
             >
               {/* Category Heading */}
-              <h3 className="text-[10px] font-black uppercase tracking-[0.5em] text-stone-700 mb-6 flex items-center gap-3">
+              <h3 className="text-[12px] font-medium   text-stone-400 mb-6 flex items-center gap-3">
                 <Plus size={10} strokeWidth={4} /> {group.category}
               </h3>
+                <hr  className='p-3 opacity-15'/>
+
               
               {/* Skill Tags */}
               <div className="flex flex-wrap gap-2.5">
@@ -80,13 +119,13 @@ const Skills = () => {
                     className="
                       group relative px-3 py-1.5 
                       bg-stone-900 border border-stone-800 rounded-md
-                      transition-all duration-300 ease-out
+                      transition-all duration-200 ease-out
                       hover:bg-stone-100 hover:border-stone-100 
                       cursor-default
                     "
                   >
                     <span className="
-                      text-[10px] font-bold uppercase tracking-widest 
+                      text-[14px]   tracking-normal
                       text-stone-400 group-hover:text-black 
                       transition-colors duration-300
                     ">
@@ -98,6 +137,8 @@ const Skills = () => {
             </div>
           ))}
         </div>
+
+      
 
         {/* Bottom Decoration */}
         <div className={`mt-24 transition-opacity duration-1000 delay-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>

@@ -16,7 +16,7 @@ const ProjectCard = ({ project, onOpen }) => {
           <img 
           src={project?.img || placeholderImage} 
           alt={project?.title || "Project Screenshot"}
-          className="w-full h-full object-fill  group-hover:scale-105 transition-all duration-1000 ease-in-out opacity-40 group-hover:opacity-100"
+          className="w-full h-full object-fill  group-hover:scale-105 transition-all duration-200 ease-out opacity-40 group-hover:opacity-100"
         />
         
         <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
@@ -93,7 +93,7 @@ const ProjectCard = ({ project, onOpen }) => {
              
               <div className="w-10 h-10 rounded-full flex items-center justify-center">
                 
-                <ArrowUpRight size={18} strokeWidth={2.5} /> 
+                <ArrowUpRight size={18} strokeWidth={3} /> 
               </div>
              </div>
               )
@@ -111,7 +111,8 @@ const ProjectCard = ({ project, onOpen }) => {
       </div>
 
       {/* 3. HOVER LINE DECORATION */}
-      <div className="absolute -bottom-4 left-0 w-0 h-[1px] bg-white/10 group-hover:w-full transition-all duration-1000 ease-in-out" />
+      <div className="absolute -bottom-10 left-0 w-0 h-[1px] bg-white/20 group-hover:w-full 
+      transition-all duration-200 ease-in-out" />
     </div>
   );
 };

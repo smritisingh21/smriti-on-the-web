@@ -79,8 +79,8 @@ const Socials = () => {
           {/* <Sparkles size={12} className="text-amber-400" /> */}
           {/* <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400">Send me a mail</span> */}
         {/* </div> */}
-        <h2 className="text-4xl md:text-7xl font-black text-stone-100 tracking-tighter uppercase leading-none">
-          Want to connect ?<br/><span className="text-gray-400 italic font-thin lowercase tracking-normal">Let's talk</span>
+        <h2 className="text-4xl md:text-4xl font-sans text-stone-400 tracking-tighter leading-none">
+          WANT TO CONNECT ?<br/><span className="text-gray-400 md:text-2xl font-thin tracking-normal">Drop me a mail</span>
         </h2>
       </div>
 
@@ -118,17 +118,20 @@ const Socials = () => {
           <button 
             type="submit" 
             disabled={isSubmitting}
-            className="group w-full py-6 bg-stone-100 text-black rounded-full font-black uppercase tracking-widest text-[10px] 
-            flex items-center justify-center gap-4 hover:bg-transparent hover:text-white transition-all active:scale-[0.98] disabled:opacity-50"
+            className="group w-full py-4  bg-stone-300 text-black rounded-md font-black  tracking-normal text-[13px] 
+            flex items-center justify-center gap-4 hover:opacity-40 hover:text-white transition-all active:scale-[0.98] "
           >
             {isSubmitting ? 'Sending...' : (
-              <>Send mail <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" /></>
+              <>
+              Send mail 
+              <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+              </>
             )}
           </button>
 
           {/* Feedback Status */}
           {status === 'success' && <p className="text-[10px] text-emerald-400 font-bold uppercase tracking-widest text-center animate-pulse">Message Sent. I'll get back to you soon.</p>}
-          {status === 'error' && <p className="text-[10px] text-red-500 font-bold uppercase tracking-widest text-center">Transmission Failed. Please try again.</p>}
+          {status === 'error' && <p className="text-[10px] text-red-500 font-bold uppercase tracking-widest text-center">Could not send. Please try again.</p>}
         </form>
       </div>
 

@@ -14,7 +14,7 @@ const Experience = () => {
   
     { 
       id: '01', 
-      role: 'Full-stack develeper', 
+      role: 'Full-stack developer', 
       company: 'Freelance', 
       year: '2025- present',
       description: `Architecting high-performance web applications.Spent a lot of time focusing on web fundamentals and worked on my personal projects. \n
@@ -41,7 +41,7 @@ const Experience = () => {
     <section id="experience" className="py-20 px-8 md:px-16 lg:px-24 bg-black/30">
       <div className="max-w-5xl mx-auto">
         {/* Compact Header */}
-          <h2 className="text-2xl font-thin  tracking-tighter text-stone-400 italic font-serif mb-4"> Work experience</h2>
+          <h2 className="text-4xl tracking-tight text-stone-400 font-medium ont-sans mb-4"> Work experience</h2>
 
         {/* Interactive List */}
         <div className="flex flex-col border-t border-stone-300">
@@ -52,7 +52,7 @@ const Experience = () => {
                 group border-b border-stone-900 transition-all duration-500 cursor-pointer
                 ${expandedId === exp.id ? 'bg-white/[0.02] px-4' : 'hover:px-4'}
               `}
-              onClick={() => toggleExpand(exp.id)}
+              onPointerOver={() => toggleExpand(exp.id)}
             >
               {/* Visible Header Row */}
               <div className="flex items-center justify-between py-6">
@@ -60,19 +60,23 @@ const Experience = () => {
                   <span className="text-[10px] font-bold text-stone-800 group-hover:text-stone-400 transition-colors">
                     {exp.id}
                   </span>
+                  <div className='flex-col'>
+
                   <h3 className={`text-lg md:text-2xl font-semibold tracking-tight transition-colors ${
                     expandedId === exp.id ? 'text-stone-50' : 'text-stone-200 group-hover:text-stone-50'
                   }`}>
                     {exp.role}
                   </h3>
-                  <p className="hidden md:block text-[10px] font-bold text-stone-300 uppercase tracking-widest italic">
-                    [{exp.company}]
+                  <p className="hidden md:block text-[16px] font-sans text-stone-500  tracking-normal ">
+                    - {exp.company}
                   </p>
+                  </div>
+                  
                 </div>
                 
                 <div className="flex items-center gap-6 md:gap-12">
                   
-                  <p className="text-[11px] font-black text-stone-100 tabular-nums">
+                  <p className="text-[14px] font-sans text-stone-100 ">
                     {exp.year}
                   </p>
                   <div className={`transition-transform duration-500 ${expandedId === exp.id ? 'rotate-180 text-stone-100' : 'text-stone-800 group-hover:text-stone-100'}`}>

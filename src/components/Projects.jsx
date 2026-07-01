@@ -35,12 +35,12 @@ export default function Projects() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-24">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
             <Layers size={14} className="text-stone-600" />
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-stone-500 italic">Portfolio</span>
-          </div>
-          <h2 className="text-xl md:text-4xl font-black text-stone-100 tracking-tighter uppercase mb-2 leading-none">
-            Selected <span className="text-stone-500 italic font-serif lowercase tracking-normal">works</span>
+            <span className="text-[10px] font-black uppercase  text-stone-500 italic">Projects</span>
+          </div> */}
+          <h2 className="text-xl md:text-5xl font-sans text-stone-100 tracking-tighter mb-2 leading-none">
+            Selected <span className="text-stone-500 italic font-sans lowercase tracking-normal">works</span>
           </h2>
           <p className="text-stone-500 max-w-xl text-sm md:text-base leading-relaxed font-medium">
             Projects that helped me strenthen my <span className="text-stone-300 italic">development fundamentals</span>.
@@ -62,9 +62,16 @@ export default function Projects() {
       </div>
 
       <style dangerouslySetInnerHTML={{ __html: `
-        .text-glow { text-shadow: 0 0 20px rgba(52, 211, 153, 0.3); }
+        .text-glow { text-shadow: 0 0 20px rgba(100, 211, 153, 0.3); }
         @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes slide-in-bottom { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slide-in-bottom { 
+          from {
+            opacity: 0; transform: translateY(20px);
+          } 
+         to { 
+            opacity: 1; transform: translateY(0); 
+          }
+        }
         .animate-in { animation: slide-in-bottom 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
       `}} />
     </section>
