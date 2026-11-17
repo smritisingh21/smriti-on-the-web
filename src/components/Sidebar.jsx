@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaArrowCircleRight, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
-import { FaGithub , FaLinkedin, FaLocationDot, FaX , FaInstagram} from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaLocationDot, FaX, FaInstagram } from 'react-icons/fa6';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +11,14 @@ const Sidebar = () => {
     { name: 'Home', href: '/' },
     { name: 'Experience', href: '/works' },
     { name: 'Selected Works', href: '/projects' },
-    { name: 'Blogs', href: '/blogs' },
+    // { name: 'Blogs', href: '/blogs' },
   ];
 
   const socials = [
     { icon: <FaLinkedin size={18} />, href: "https://www.linkedin.com/in/smriti-singh-a06685257/" },
-    { icon: <FaGithub  size={18} />, href: "https://github.com/smritisingh21" },
-    { icon: <FaTwitter  size={18} />, href: "https://x.com/sillymilllly" },
-    { icon: <FaInstagram  size={18} />, href: "https://www.instagram.com/smriti.made.these/" },
+    { icon: <FaGithub size={18} />, href: "https://github.com/smritisingh21" },
+    { icon: <FaTwitter size={18} />, href: "https://x.com/sillymilllly" },
+    { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/smriti.made.these/" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Sidebar = () => {
 
         <div className="font-black tracking-tighter text-white">
           SMRITI SINGH<span className="text-stone-600">®</span>
-          </div>
+        </div>
         <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           {isOpen ? <FaX size={24} /> : <IoMenu size={24} />}
         </button>
@@ -53,11 +53,11 @@ const Sidebar = () => {
 
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-stone-900 border
              border-stone-800">
-               <img 
-                 src="mili.jpg" 
-                 alt="Smriti Singh" 
-                 className="w-full h-full object-cover  transition-all duration-700"
-               />
+              <img
+                src="mili.jpg"
+                alt="Smriti Singh"
+                className="w-full h-full object-cover  transition-all duration-700"
+              />
             </div>
           </div>
           <div>
@@ -65,30 +65,30 @@ const Sidebar = () => {
               Smriti Singh
             </h1>
             <p className="text-[10px] font-bold text-stone-600 uppercase tracking-wider">
-             CS engineer / Developer
+              CS engineer / Developer
             </p>
             <p className=" flex items-center justify-start gap-1.5 text-[10px] font-bold text-stone-600  tracking-wider mt-3">
-             <FaLocationDot size={12}/> Bengaluru ,India
+              <FaLocationDot size={12} /> Bengaluru ,India
             </p>
           </div>
 
           <div className=" border-t border-stone-900 pt-3 ">
-          <div className="flex gap-5">
-            {socials.map((social, idx) => (
-              <a
-                key={idx}
-                href={social.href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-stone-600 hover:text-stone-100 transition-colors"
-              >
-                {social.icon}
-              </a>
-            ))}
+            <div className="flex gap-5">
+              {socials.map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-stone-600 hover:text-stone-100 transition-colors"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-        </div>
-       
+
 
         {/* Middle Section: Navigation */}
         <nav className="flex flex-col gap-6">
@@ -106,7 +106,7 @@ const Sidebar = () => {
           ))}
         </nav>
 
-    
+
       </aside>
     </>
   );

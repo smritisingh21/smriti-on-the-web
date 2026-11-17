@@ -20,69 +20,68 @@ const Skills = () => {
   }, []);
 
   const skillCategories = [
-  {
-    category: "Frontend",
-    skills: [
-      "React.js",
-      "Next.js",
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "Tailwind CSS",
-      "DaisyUI",
-      "Responsive Design",
+    {
+      category: "Frontend",
+      skills: [
+        "React.js",
+        "React Native",
+        "JavaScript (ES6+)",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Responsive Design",
+        "Figma",
 
-    ]
-  },
-  {
-    category: "Backend",
-    skills: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "Authentication (JWT, OAuth)",
-      "Zod",
-      "Redis",
-      "Role-Based Access Control (RBAC)",
-      "MongoDB",
-      "Mongoose",
-      "Prisma ORM",
-      "AWS",
-      "Vercel",
-      "Render",
-      "Docker"
-    ]
-  },
-  {
-    category: "AI & Machine Learning",
-    skills: [
-      "LangChain",
-      "Retrieval-Augmented Generation (RAG)",
-      "Ollama",
-      "LLM Integration",
-    ]
-  },
+      ]
+    },
+    {
+      category: "Backend and Database",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Authentication (JWT, OAuth)",
+        "Zod",
+        "Redis",
+        "MySQL",
+        "PostgreSQL",
+        "Prisma ORM",
+        "MongoDB",
+        "Mongoose",
+      ]
+    },
+    {
+      category: "AI & Machine Learning",
+      skills: [
+        "LangChain",
+        "Retrieval-Augmented Generation (RAG)",
+        "Ollama",
+        "LLMs", "Prompt Engineering"
+      ]
+    },
+    {
 
-  {
-    category: "Tools",
-    skills: [
-      "Postman",
-      "GitHub",
-      "Figma",
-      
-    ]
-  },
+      category: 'Cloud and Devops',
+      skills: [
+        "Amazon Web Services", "S3", "EC2",
+        "Vercel",
+        "Render",
+        "Docker",
+        "Github"
+      ]
+    },
 
-];
+
+  ];
 
 
   return (
-    <section 
-      id="skills" 
+    <section
+      id="skills"
       ref={sectionRef}
       className="relative min-h-100 py-10 px-8 bg-black/50 overflow-hidden"
     >
       <div className="relative z-10 max-w-2xl mx-auto">
-        
+
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/10 mb-4">
@@ -99,7 +98,7 @@ const Skills = () => {
         {/* Categorized Skills Grid */}
         <div className="space-y-8">
           {skillCategories.map((group, groupIndex) => (
-            <div 
+            <div
               key={groupIndex}
               className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
               style={{ transitionDelay: `${groupIndex * 150}ms` }}
@@ -108,13 +107,13 @@ const Skills = () => {
               <h3 className="text-[12px] font-medium   text-stone-400 mb-6 flex items-center gap-3">
                 <Plus size={10} strokeWidth={4} /> {group.category}
               </h3>
-                <hr  className='p-3 opacity-15'/>
+              <hr className='p-3 opacity-15' />
 
-              
+
               {/* Skill Tags */}
               <div className="flex flex-wrap gap-2.5">
                 {group.skills.map((skill, skillIndex) => (
-                  <div 
+                  <div
                     key={skillIndex}
                     className="
                       group relative px-3 py-1.5 
@@ -138,13 +137,13 @@ const Skills = () => {
           ))}
         </div>
 
-      
+
 
         {/* Bottom Decoration */}
         <div className={`mt-24 transition-opacity duration-1000 delay-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-           <div className="text-stone-900">
-              <Plus size={16} strokeWidth={2} />
-           </div>
+          <div className="text-stone-900">
+            <Plus size={16} strokeWidth={2} />
+          </div>
         </div>
 
       </div>
